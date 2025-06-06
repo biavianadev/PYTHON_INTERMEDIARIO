@@ -1,6 +1,6 @@
-# Comandos Condicionais (aprofundamento) - capítulo 8
+# Comandos Condicionais - capítulo 8
 
-## Comando `match-case`
+## Comando match-case
 
 ### Conceito Geral
 
