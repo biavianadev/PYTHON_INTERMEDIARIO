@@ -40,7 +40,7 @@ Pode ser combinado com:
 * `while`
 * `for`
 
-## Comando `if` de única linha (inline if ou operador ternário)
+## Comando if de única linha (inline if ou operador ternário)
 
 ### Conceito Geral
 
