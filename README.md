@@ -63,4 +63,64 @@ Pode ser combinado com:
 * Para casos onde o `else` não seria usado, pode-se incluir `else 0` como valor neutro.
 
 ----------------------------------------------
+Claro! Aqui está o resumo no mesmo estilo do exemplo que você forneceu, agora aplicado ao conteúdo sobre a **classe `set`**:
+
+---
+
+# Conjuntos - capítulo 9
+
+## Classe set
+
+A classe `set` permite a criação de **coleções de elementos únicos**, **não ordenados** e **mutáveis**, com restrições específicas quanto aos tipos de dados que podem ser armazenados.
+
+### Características
+
+* **Elementos únicos**: não permite duplicação de valores.
+* **Elementos não ordenados**: a ordem é arbitrária e definida internamente pelo interpretador Python.
+* **Mutável**: é possível adicionar ou remover elementos após a criação.
+* **Elementos devem ser imutáveis**: apenas objetos **hashable** (com valor de hash fixo) podem ser inseridos.
+
+## Criação de Conjuntos
+
+```python
+# Conjunto não vazio
+c1 = {16, 8, 29}
+
+# Conjunto vazio
+c2 = set()
+```
+
+* O uso de `{}` é válido apenas para conjuntos **não vazios**.
+* Para criar conjuntos vazios, use obrigatoriamente `set()`.
+
+## Conceitos: Hash e Hashable
+
+* O **hash** é um número inteiro gerado a partir do conteúdo de um objeto.
+* Objetos **imutáveis** possuem hash; objetos **mutáveis** (listas, dicionários) não possuem.
+* A função `hash()` retorna o hash de um objeto, se aplicável.
+* **Tuplas** têm hash; **listas** não.
+* **Exemplo**: `26` e `26.0` têm o mesmo hash, então não coexistem em um mesmo conjunto.
+
+### Relação entre Hash e Conjuntos
+
+* Somente objetos **hashable** podem ser membros de conjuntos.
+* A **unicidade** dos elementos em um conjunto é controlada pelo seu valor de hash.
+* Objetos com o mesmo hash não podem aparecer duas vezes.
+
+## Principais Métodos da Classe `set`
+
+| Método             | Descrição                               |
+| ------------------ | --------------------------------------- |
+| `.add(x)`          | Adiciona o elemento `x` ao conjunto     |
+| `.remove(x)`       | Remove `x`; erro se não existir         |
+| `.discard(x)`      | Remove `x`; **sem erro** se não existir |
+| `.clear()`         | Remove **todos** os elementos           |
+| `.copy()`          | Retorna uma cópia rasa do conjunto      |
+| `.union(s)`        | Retorna a união com o conjunto `s`      |
+| `.intersection(s)` | Retorna a interseção com `s`            |
+| `.difference(s)`   | Retorna a diferença com `s`             |
+| `.issubset(s)`     | Verifica se é subconjunto de `s`        |
+| `.issuperset(s)`   | Verifica se é superconjunto de `s`      |
+
+---------------------------------------------
 `STATUS: em andamento`
