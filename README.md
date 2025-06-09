@@ -107,7 +107,7 @@ c2 = set()
 * A **unicidade** dos elementos em um conjunto é controlada pelo seu valor de hash.
 * Objetos com o mesmo hash não podem aparecer duas vezes.
 
-## Principais Métodos da Classe `set`
+## Principais Métodos da Classe set
 
 | Método             | Descrição                               |
 | ------------------ | --------------------------------------- |
