@@ -85,13 +85,17 @@ c1 = {16, 8, 29}
 # Conjunto vazio
 c2 = set()
 
-# set utilizando lista
+# set utilizando lista 
 c3 = set([elementos da lista])
+
+# set utilizando objeto
+x = 'texto'
+c4 = set(x)
 ```
 
 * O uso de `{}` é válido apenas para conjuntos **não vazios**.
 * Para criar conjuntos vazios, use obrigatoriamente `set()`.
-* Pode-se utilizar o `set` para conjuntos não vazios, apenas adicionando um único argumento, através de uma tupla ou lista.
+* Pode-se utilizar o `set` para conjuntos não vazios, apenas adicionando um único argumento, através de um objeto, uma tupla ou lista.
 
 ## Conceitos: Hash e Hashable
 
