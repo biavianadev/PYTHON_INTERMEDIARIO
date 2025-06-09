@@ -63,10 +63,6 @@ Pode ser combinado com:
 * Para casos onde o `else` não seria usado, pode-se incluir `else 0` como valor neutro.
 
 ----------------------------------------------
-Claro! Aqui está o resumo no mesmo estilo do exemplo que você forneceu, agora aplicado ao conteúdo sobre a **classe `set`**:
-
----
-
 # Conjuntos - capítulo 9
 
 ## Classe set
@@ -88,10 +84,14 @@ c1 = {16, 8, 29}
 
 # Conjunto vazio
 c2 = set()
+
+# set utilizando lista
+c3 = set([elementos da lista])
 ```
 
 * O uso de `{}` é válido apenas para conjuntos **não vazios**.
 * Para criar conjuntos vazios, use obrigatoriamente `set()`.
+* Pode-se utilizar o `set` para conjuntos não vazios, apenas adicionando um único argumento, através de uma tupla ou lista.
 
 ## Conceitos: Hash e Hashable
 
