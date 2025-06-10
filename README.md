@@ -126,5 +126,60 @@ c4 = set(x)
 | `.issubset(s)`     | Verifica se é subconjunto de `s`        |
 | `.issuperset(s)`   | Verifica se é superconjunto de `s`      |
 
----------------------------------------------
+
+## Operadores com Conjuntos
+
+Além dos métodos, o Python permite o uso de **operadores específicos** para conjuntos, oferecendo uma forma mais **concisa e legível** para executar operações comuns.
+
+### Tabela de Operações com Conjuntos
+
+| Operação            | Operador         | Descrição                                                         | Método equivalente            |              
+| ------------------- | ---------------- | ----------------------------------------------------------------- | ----------------------------- |
+| Diferença           | `A - B`          | Retorna os elementos de `A` que não estão em `B`                  | `A.difference(B)`             |              
+| União               | `A / B`          | Retorna todos os elementos presentes em `A` ou `B`                | `A.union(B)`                  |
+| Interseção          | `A & B`          | Retorna os elementos comuns entre `A` e `B`                       | `A.intersection(B)`           |              
+| Diferença Simétrica | `A ^ B`          | Retorna os elementos exclusivos de `A` e `B`, excluindo os comuns | `A.symmetric_difference(B)`   |              
+| Pertence            | `valor in A`     | Verifica se um valor está presente no conjunto `A`                | –                             |              
+| Não Pertence        | `valor not in A` | Verifica se um valor **não** está presente no conjunto `A`        | –                             |              
+
+### Observações
+
+* Os **operadores** funcionam apenas entre **dois conjuntos por vez**.
+* Os **métodos** permitem operações com múltiplos conjuntos de forma encadeada.
+
+## Conjuntos como Iteradores
+
+### Conceito Geral
+
+Os conjuntos podem ser percorridos com o comando `for`, **assim como listas, tuplas e strings**. A ordem dos elementos exibidos não depende da ordem de inserção.
+
+### Características
+
+* O conteúdo pode ser acessado por iteração, **mas não por índice**.
+* A ordem dos elementos é determinada **internamente** pelo Python.
+* Conjuntos são úteis para **coleções sem elementos repetidos**.
+
+## A Classe frozenset
+
+### Conceito Geral
+
+`frozenset` é uma versão **imutável** da classe `set`. Uma vez criado, seus elementos **não podem ser modificados**.
+
+### Características
+
+* Suporta as mesmas operações que os conjuntos comuns:
+
+  * Diferença
+  * União
+  * Interseção
+  * Diferença Simétrica
+* É criado usando o construtor:
+
+```python
+fs = frozenset(iterável)
+```
+
+* Útil quando é necessário garantir a **imutabilidade** dos dados.
+
+--------------------------------------------
 `STATUS: em andamento`
