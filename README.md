@@ -182,4 +182,67 @@ fs = frozenset(iterável)
 * Útil quando é necessário garantir a **imutabilidade** dos dados.
 
 --------------------------------------------
+Claro! Aqui está o resumo no mesmo estilo daquele modelo anterior, organizado e claro:
+
+---
+
+# Dicionários - capítulo 10
+
+## Estrutura do Dicionário
+
+### Conceito Geral
+
+Dicionários são **coleções de pares chave-valor**, úteis para armazenar dados de forma mais semântica do que listas, como no caso de associar siglas de estados a informações específicas (ex: nome, capital, PIB).
+
+### Características
+
+* São **mutáveis** e **dinâmicos** (como listas).
+* Podem ser **aninhados**: listas dentro de dicionários, dicionários dentro de listas, etc.
+* Os elementos são acessados **por chave**, e não por índice.
+
+### Diferenças em relação às listas
+
+| Característica | Lista                         | Dicionário                    |
+| -------------- | ----------------------------- | ----------------------------- |
+| Acesso         | Por índice (números inteiros) | Por chave (objetos imutáveis) |
+| Organização    | Sequencial                    | Associação chave-valor        |
+
+## Chaves em Dicionários
+
+* **Devem ser objetos imutáveis** (ex: strings, números, tuplas sem listas).
+* Precisam ser **hashable** (ver: https://docs.python.org/pt-br/3/glossary.html#term-hashable)
+
+### Valores em Dicionários
+
+* **Podem ser de qualquer tipo** de objeto Python (listas, strings, inteiros, outros dicionários, etc.).
+
+## Criação de Dicionários
+
+### Sintaxe Geral
+
+```python
+# Dicionário com dados
+dicionario = {chave1: valor1, chave2: valor2}
+
+# Criar dicionário vazio e adicionar elementos
+dicionario = {}
+dicionario[chave] = valor
+```
+
+* Se a **chave não existe**, o par é **criado**.
+* Se a **chave já existe**, o valor é **atualizado**.
+
+## Métodos da Classe dict
+
+| Método                  | Função                                                              |
+| ----------------------- | ------------------------------------------------------------------- |
+| `dicionario.keys()`     | Retorna todas as chaves                                             |
+| `dicionario.values()`   | Retorna todos os valores                                            |
+| `dicionario.items()`    | Retorna uma lista de tuplas (chave, valor)                          |
+| `dicionario.get(chave)` | Retorna o valor associado à chave, ou `None` se a chave não existir |
+| `dicionario.pop(chave)` | Remove o item com a chave especificada e retorna seu valor          |
+| `dicionario.clear()`    | Remove todos os itens do dicionário                                 |
+| `chave in dicionario`   | Verifica se uma chave está presente                                 |
+
+--------------------------------------------
 `STATUS: em andamento`
