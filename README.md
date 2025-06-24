@@ -244,5 +244,65 @@ dicionario[chave] = valor
 | `dicionario.clear()`    | Remove todos os itens do dicionário                                 |
 | `chave in dicionario`   | Verifica se uma chave está presente                                 |
 
+
+## Iterações com Dicionários
+
+### Conceito Geral
+
+A estrutura de **dicionários** permite iterar de maneira eficiente sobre seus elementos, utilizando o comando `for`. Existem três formas principais de iteração: sobre as **chaves**, os **valores** ou **ambos simultaneamente** (chave-valor).
+
+### Caso 1 – Iteração sobre as chaves
+
+- Estrutura Geral
+
+```python
+for x in dicionario:
+    # ou
+for x in dicionario.keys():
+```
+
+- Características
+
+    * Itera diretamente sobre as **chaves** do dicionário.
+    * Ambas as formas acima são equivalentes.
+    * Para acessar o **valor** correspondente à chave, usa-se `dicionario[x]`.
+
+### Caso 2 – Iteração sobre os valores
+
+- Estrutura Geral
+
+```python
+for valor in dicionario.values():
+```
+
+- Características
+
+    * Itera diretamente sobre os **valores**, sem utilizar as chaves.
+    * Útil quando **as chaves não são necessárias** para o processamento.
+
+### Caso 3 – Iteração conjunta chave-valor
+
+- Estrutura Geral
+
+```python
+for chave, valor in dicionario.items():
+    # ou
+for (chave, valor) in dicionario.items():
+    # ou
+for tupla in dicionario.items():
+```
+
+- Características
+
+    * Itera sobre **pares (chave, valor)**, retornados como **tuplas**.
+    * A expressão `for chave, valor in ...` é uma forma simplificada de desempacotar cada tupla.
+    * `dicionario.items()` retorna uma sequência de tuplas, e cada tupla pode ser recebida por: dois objetos (`chave, valor`); ou um único objeto (`tupla`), que depois pode ser acessado via `tupla[0]`, `tupla[1]`.
+
+### Benefícios
+
+* **Versatilidade**: permite acessar facilmente o conteúdo completo do dicionário.
+* **Clareza**: a escolha do tipo de iteração depende da necessidade do programa.
+* **Integração fluida** com outras estruturas como listas e funções.
+
 --------------------------------------------
 `STATUS: em andamento`
