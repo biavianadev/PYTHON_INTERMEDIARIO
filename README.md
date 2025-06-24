@@ -253,7 +253,7 @@ A estrutura de **dicionários** permite iterar de maneira eficiente sobre seus e
 
 ### Caso 1 – Iteração sobre as chaves
 
-- Estrutura Geral
+- **Estrutura Geral**
 
 ```python
 for x in dicionario:
@@ -261,7 +261,7 @@ for x in dicionario:
 for x in dicionario.keys():
 ```
 
-- Características
+- **Características**
 
     * Itera diretamente sobre as **chaves** do dicionário.
     * Ambas as formas acima são equivalentes.
@@ -269,20 +269,20 @@ for x in dicionario.keys():
 
 ### Caso 2 – Iteração sobre os valores
 
-- Estrutura Geral
+- **Estrutura Geral**
 
 ```python
 for valor in dicionario.values():
 ```
 
-- Características
+- **Características**
 
     * Itera diretamente sobre os **valores**, sem utilizar as chaves.
     * Útil quando **as chaves não são necessárias** para o processamento.
 
 ### Caso 3 – Iteração conjunta chave-valor
 
-- Estrutura Geral
+- **Estrutura Geral**
 
 ```python
 for chave, valor in dicionario.items():
@@ -292,7 +292,7 @@ for (chave, valor) in dicionario.items():
 for tupla in dicionario.items():
 ```
 
-- Características
+- **Características**
 
     * Itera sobre **pares (chave, valor)**, retornados como **tuplas**.
     * A expressão `for chave, valor in ...` é uma forma simplificada de desempacotar cada tupla.
